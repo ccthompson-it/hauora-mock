@@ -14,3 +14,39 @@
   padding-top: 20vh;
   text-align: center;
 }
+
+.dnd-box {
+  width: 40vw;
+  margin-left: 20vw;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-evenly;
+  flex-direction: row
+}
+
+.square {
+  width: 10vw;
+  height: 10vw;
+  border: 1px black solid;
+  cursor: pointer;
+}
+
+.text-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+
+.draggable-container:hover {
+  background-color: rgb(59, 94, 160);
+}
+
+.middle-text {
+  font-family: 'Baloo Da 2', display;
+  font-weight: 500;;
+  font-size: 2rem;
+  border-radius: 2.5%;
+}
