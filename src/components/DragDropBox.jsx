@@ -32,10 +32,16 @@ function DragDropBox(props) {
 
   return (
     <div className="square" ref={drop}>
-      <div className="text-container">
-        {!empty && <p className="middle-text" ref={drag}>{isDragging ? 'Weeee!' : "Drag Me!"}</p>}
-        {empty && canDrop && <p className="middle-text">Drop it here!</p>}
-      </div>
+      {!empty &&
+        <div className="text-container draggable" ref={drag}>
+          <p className="middle-text" >{isDragging ? 'Weeee!' : "Drag Me!"}</p>
+        </div>
+      }
+      {empty && canDrop &&
+        <div className="text-container">
+          <p className="middle-text">Drop it here!</p>
+        </div>
+      }
     </div>
   )
 }
