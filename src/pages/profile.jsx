@@ -8,6 +8,7 @@ function Profile() {
       <Header />
       <div className="center">
         <h1>This is the Profile!</h1>
+        <Link to="/"><button>Sign Out!</button></Link>
       </div>
     </Fragment>
   )
