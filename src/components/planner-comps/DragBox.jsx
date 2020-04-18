@@ -1,5 +1,5 @@
 import React from "react"
-import { useDrag, useDrop } from 'react-dnd'
+import { useDrag } from 'react-dnd'
 
 const ItemTypes = {
   TEXT: 'text',
@@ -7,7 +7,7 @@ const ItemTypes = {
 
 
 
-function DragDropBox(props) {
+function DragBox(props) {
   const { text } = props
   const [{ isDragging }, drag] = useDrag({
     item: {
@@ -20,12 +20,10 @@ function DragDropBox(props) {
   })
 
   return (
-    <div className="square">
-      <div className="text-container draggable" ref={drag}>
-        <p className="middle-text" >{isDragging ? 'Weeee!' : text}</p>
-      </div>
+    <div className="text-container draggable" ref={drag}>
+      <p className="middle-text" >{isDragging ? 'Weeee!' : text}</p>
     </div>
   )
 }
 
-export default DragDropBox
+export default DragBox
