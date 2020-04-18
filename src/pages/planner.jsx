@@ -5,7 +5,6 @@ import { DndProvider } from 'react-dnd'
 
 import Header from '../components/Header'
 import Schedule from '../components/planner-comps/Schedule'
-import DragBox from '../components/planner-comps/DragBox'
 import Activities from '../components/planner-comps/Activities'
 
 
