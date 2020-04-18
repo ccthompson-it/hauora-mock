@@ -13,7 +13,7 @@ function makeDays() {
 
 function Schedule() {
   return (
-    <div>
+    <div className = "week-box">
       {makeDays()}
     </div>
   )
