@@ -1,10 +1,11 @@
-import React, { Component } from "react"
+import React, { Component, Fragment } from "react"
 import { Link } from 'gatsby'
 
 import Backend from 'react-dnd-html5-backend'
 import { DndProvider } from 'react-dnd'
 
 import DragDropBox from '../components/DragDropBox'
+import Header from '../components/Header'
 
 
 function makeDragDrops(emptyPos, changePosition) {
@@ -32,17 +33,18 @@ class Homepage extends Component {
   }
 
   render() {
-    console.log(this.state)
     return (
-      <div className="center">
-        <h1>This is the Planning (?) Page</h1>
-        <Link to="/"><button>Back!</button></Link>
-        <DndProvider backend={Backend}>
-          <div className="dnd-box">
-            {makeDragDrops(this.state.emptyPos, this.changePosition)}
-          </div>
-        </DndProvider>
-      </div>
+      <Fragment>
+        <Header />
+        <div className="center">
+          <h1>This is the Planner!</h1>
+          <DndProvider backend={Backend}>
+            <div className="dnd-box">
+              {makeDragDrops(this.state.emptyPos, this.changePosition)}
+            </div>
+          </DndProvider>
+        </div>
+      </Fragment>
     )
   }
 }
