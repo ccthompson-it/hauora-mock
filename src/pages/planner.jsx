@@ -6,6 +6,7 @@ import { DndProvider } from 'react-dnd'
 import Header from '../components/Header'
 import Schedule from '../components/planner-comps/Schedule'
 import DragBox from '../components/planner-comps/DragBox'
+import Activities from '../components/planner-comps/Activities'
 
 
 class Homepage extends Component {
@@ -28,7 +29,9 @@ class Homepage extends Component {
         <Header />
         <DndProvider backend={Backend}>
           <div className="planner-box">
-            <DragBox text="Walk the Dog" />
+            <div className="activities-box">
+              <Activities />
+            </div>
             <div className="schedule-box">
               <h1>This is the Planner!</h1>
               <Schedule />
