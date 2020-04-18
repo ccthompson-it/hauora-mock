@@ -1,5 +1,4 @@
 import React, { Component, Fragment } from "react"
-import { Link } from 'gatsby'
 
 import Backend from 'react-dnd-html5-backend'
 import { DndProvider } from 'react-dnd'
