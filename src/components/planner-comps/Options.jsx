@@ -1,11 +1,7 @@
 import React, { Fragment } from "react"
-import { useDrag } from 'react-dnd'
 
 import DragBox from './DragBox'
 
-const ItemTypes = {
-  TEXT: 'text',
-}
 
 const options = {
   physical: ["physical 1", "physical 2"],
@@ -20,7 +16,7 @@ function Options(props) {
 
   return (
     <Fragment>
-      {currentOptions.map((option) => { return <DragBox text={option} /> })}
+      {currentOptions.map((option, i) => { return <DragBox text={option} key={i}/> })}
     </Fragment>
   )
 }

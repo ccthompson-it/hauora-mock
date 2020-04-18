@@ -1,4 +1,4 @@
-import React, { Fragment } from "react"
+import React from "react"
 import Day from './Day'
 
 const dayOrder = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
@@ -6,7 +6,7 @@ const dayOrder = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Frida
 function makeDays() {
   let days = []
   for (let i = 0; i < 7; i++) {
-    days.push(<Day day={dayOrder[i]} />)
+    days.push(<Day day={dayOrder[i]} key={i} />)
   }
   return days
 }
