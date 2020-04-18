@@ -56,6 +56,9 @@ a {
   width: 100vw;
   height: 80vh;
   margin-top: 10vh;
+  display: flex;
+  flex-flow: wrap;
+  flex-direction: row;
 }
 
 .week-box {
