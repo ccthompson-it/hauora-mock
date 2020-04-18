@@ -14,7 +14,7 @@ function checkBoxEmpty(boxText) {
 }
 
 function DropBox(props) {
-  const { boxId, boxText, changeText } = props
+  const { boxId, boxText, changeText, removeText } = props
 
   const [{ isOver, canDrop }, drop] = useDrop({
     accept: ItemTypes.TEXT,
@@ -28,7 +28,7 @@ function DropBox(props) {
 
   return (
     <div className="droppable-box" ref={drop}>
-      {(boxText !== null) && <p>{boxText}</p>}
+      {(boxText !== null) && <p onClick={() => removeText(boxId)}>{boxText}</p>}
     </div>
   )
 }
