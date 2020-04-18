@@ -1,5 +1,4 @@
-import React, { Component, Fragment } from "react"
-import { Link } from 'gatsby'
+import React, { Fragment } from "react"
 import Header from '../components/Header'
 
 function Stats() {

@@ -50,3 +50,34 @@
   font-size: 2rem;
   border-radius: 2.5%;
 }
+
+/** Nav Bar **/ 
+
+.nav-bar {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  flex-flow: wrap;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+#main-title {
+  width: 20vw;
+  margin-left: 10vw;
+}
+
+.nav-links {
+  width: 35vw;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+}
+
+.active-link {
+  font-weight: bold;
+}

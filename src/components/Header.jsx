@@ -3,12 +3,14 @@ import { Link } from 'gatsby'
 
 function Header() {
   return (
-    <div className="navbar">
-      <h1>Hauora</h1>
-      <Link to="/profile/"><button>User Profile</button></Link>
-      <Link to="/dashboard/"><button>Dashboard</button></Link>
-      <Link to="/planner/"><button>Weekly Planner</button></Link>
-      <Link to="/stats/"><button>Stats/Progress</button></Link>
+    <div className="nav-bar">
+      <h1 id="main-title">Hauora</h1>
+      <div className="nav-links">
+        <Link to="/profile/" activeClassName="active-link">User Profile</Link>
+        <Link to="/dashboard/" activeClassName="active-link">Dashboard</Link>
+        <Link to="/planner/" activeClassName="active-link">Weekly Planner</Link>
+        <Link to="/stats/" activeClassName="active-link">Stats/Progress</Link>
+      </div>
     </div>
   )
 }
