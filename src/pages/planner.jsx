@@ -5,6 +5,7 @@ import { DndProvider } from 'react-dnd'
 
 import DragDropBox from '../components/DragDropBox'
 import Header from '../components/Header'
+import Schedule from '../components/planner-comps/Schedule'
 
 
 function makeDragDrops(emptyPos, changePosition) {
@@ -37,11 +38,7 @@ class Homepage extends Component {
         <Header />
         <div className="center">
           <h1>This is the Planner!</h1>
-          <DndProvider backend={Backend}>
-            <div className="dnd-box">
-              {makeDragDrops(this.state.emptyPos, this.changePosition)}
-            </div>
-          </DndProvider>
+          <Schedule />
         </div>
       </Fragment>
     )
