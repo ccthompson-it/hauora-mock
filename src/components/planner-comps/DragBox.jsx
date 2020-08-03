@@ -20,8 +20,8 @@ function DragBox(props) {
   })
 
   return (
-    <div className="text-container draggable" ref={drag}>
-      <p className="middle-text" >{isDragging ? 'Weeee!' : text}</p>
+    <div className="draggable" ref={drag}>
+      <p className="middle-text" >{text}</p>
     </div>
   )
 }

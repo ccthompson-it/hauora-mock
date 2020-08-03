@@ -1,8 +1,17 @@
+:root {
+  --text-color: #233142;
+  --primary: #a5def1;
+  --secondary: #ebf7fd;
+  --tertiary: #36506c;
+}
+
 * {
   margin: 0;
 }
 
 #___gatsby {
+  background-color: var(--primary);
+  color: var(--text-color);
   width: 100vw;
   height: 100vh;
 }
@@ -14,9 +23,6 @@
   text-align: center;
 }
 
-.draggable {
-  cursor: pointer;
-}
 
 /** Nav Bar **/ 
 
@@ -30,8 +36,8 @@
 }
 
 #main-title {
-  width: 20vw;
-  margin-left: 10vw;
+  width: 23vw;
+  margin-left: 7vw;
 }
 
 .nav-links {
@@ -61,11 +67,6 @@ a {
   flex-direction: row;
 }
 
-.activities-box {
-  width: 30vw;
-  text-align: center;
-}
-
 .schedule-box {
   width: 70vw;
 }
@@ -85,3 +86,40 @@ a {
   height: 30px;
   border: 1px solid black;
 }
+
+/* Options */
+
+.activities-box {
+  width: 20vw;
+  padding: 0 5vw;
+}
+
+.category-box {
+  text-align: center;
+}
+
+.input-box {
+  text-align: center;
+}
+
+.options-box {
+  display: flex;
+  flex-flow: wrap;
+  text-align: center;
+}
+
+.draggable {
+  cursor: pointer;
+  background-color: var(--tertiary);
+  color: var(--secondary);
+  width: 50%;
+  display: inline-block;
+  padding: 1.5vh 0;
+}
+
+.draggable:hover {
+  background-color: var(--text-color);
+}
+
+
+

@@ -5,7 +5,7 @@ function Homepage() {
   return (
     <div className="center">
       <h1>This is the Landing Page!</h1>
-      <Link to="/dashboard/"><button>Sign In!</button></Link>
+      <Link to="/planner/"><button>Sign In!</button></Link>
     </div>
   )
 }

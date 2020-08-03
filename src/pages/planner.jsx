@@ -32,7 +32,6 @@ class Homepage extends Component {
               <Activities />
             </div>
             <div className="schedule-box">
-              <h1>This is the Planner!</h1>
               <Schedule />
             </div>
           </div>
