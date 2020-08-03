@@ -23,9 +23,6 @@
   text-align: center;
 }
 
-.draggable {
-  cursor: pointer;
-}
 
 /** Nav Bar **/ 
 
@@ -70,11 +67,6 @@ a {
   flex-direction: row;
 }
 
-.activities-box {
-  width: 30vw;
-  text-align: center;
-}
-
 .schedule-box {
   width: 70vw;
 }
@@ -94,3 +86,41 @@ a {
   height: 30px;
   border: 1px solid black;
 }
+
+/* Options */
+
+.activities-box {
+  width: 20vw;
+  padding: 0 5vw;
+}
+
+.category-box {
+  text-align: center;
+  height: 
+}
+
+.input-box {
+  text-align: center;
+}
+
+.options-box {
+  display: flex;
+  flex-flow: wrap;
+  text-align: center;
+}
+
+.draggable {
+  cursor: pointer;
+  background-color: var(--tertiary);
+  color: var(--secondary);
+  width: 50%;
+  display: inline-block;
+  padding: 1.5vh 0;
+}
+
+.draggable:hover {
+  background-color: var(--text-color);
+}
+
+
+

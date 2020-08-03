@@ -13,17 +13,19 @@ class Activities extends Component {
 
   changePillar = (pillar) => {
     this.setState({
-      pillar 
+      pillar
     })
   }
 
   render() {
     return (
       <Fragment>
-        <button onClick={() => this.changePillar("physical")}>Physical</button>
-        <button onClick={() => this.changePillar("mental")}>Mental</button>
-        <button onClick={() => this.changePillar("spiritual")}>Spiritual</button>
-        <button onClick={() => this.changePillar("social")}>Social</button>
+        <div className="category-box">
+          <button onClick={() => this.changePillar("physical")}>Physical</button>
+          <button onClick={() => this.changePillar("mental")}>Mental</button>
+          <button onClick={() => this.changePillar("spiritual")}>Spiritual</button>
+          <button onClick={() => this.changePillar("social")}>Social</button>
+        </div>
         <Options pillar={this.state.pillar} />
       </Fragment>
     )

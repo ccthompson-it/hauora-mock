@@ -4,10 +4,10 @@ import DragBox from './DragBox'
 
 
 let options = {
-  physical: ["physical 1", "physical 2"],
-  mental: ["mental 1", "mental 2"],
-  spiritual: ["spiritual 1", "spiritual 2"],
-  social: ["social 1", "social 2"]
+  physical: ["Run", "Bike"],
+  mental: ["Read a Book", "Study"],
+  spiritual: ["Meditate", "Yoga"],
+  social: ["Call a Friend", "Visit Family"]
 }
 
 class Options extends Component {
@@ -25,11 +25,12 @@ class Options extends Component {
   }
 
   handleSubmit = () => {
-    console.log(this.props.pillar, this.state.activity)
-    options[this.props.pillar].push(this.state.activity)
-    this.setState({
-      activity: ""
-    })
+    if (this.state.activity.replace(/\s/g,"") !== "") {
+      options[this.props.pillar].push(this.state.activity)
+      this.setState({
+        activity: ""
+      })
+    }
   }
 
   render() {
@@ -39,9 +40,13 @@ class Options extends Component {
 
     return (
       <Fragment>
-        <input type="text" placeholder="Add Your Own..." value={activity} onChange={this.handleChange}/>
-        <button onClick={this.handleSubmit}>+</button>
-        {currentOptions.map((option, i) => { return <DragBox text={option} key={i} /> })}
+        <div className="input-box">
+          <input type="text" placeholder="Add Your Own..." value={activity} onChange={this.handleChange} />
+          <button onClick={this.handleSubmit}>+</button>
+        </div>
+        <div className="options-box">
+          {currentOptions.map((option, i) => { return <DragBox text={option} key={i} /> })}
+        </div>
       </Fragment>
     )
   }
