@@ -1,8 +1,17 @@
+:root {
+  --text-color: #233142;
+  --primary: #a5def1;
+  --secondary: #ebf7fd;
+  --tertiary: #36506c;
+}
+
 * {
   margin: 0;
 }
 
 #___gatsby {
+  background-color: var(--primary);
+  color: var(--text-color);
   width: 100vw;
   height: 100vh;
 }
@@ -30,8 +39,8 @@
 }
 
 #main-title {
-  width: 20vw;
-  margin-left: 10vw;
+  width: 23vw;
+  margin-left: 7vw;
 }
 
 .nav-links {
