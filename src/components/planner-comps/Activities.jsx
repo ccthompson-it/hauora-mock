@@ -18,13 +18,14 @@ class Activities extends Component {
   }
 
   render() {
+    const { pillar } = this.state
     return (
       <Fragment>
         <div className="category-box">
-          <button className="category-button" onClick={() => this.changePillar("physical")}>Physical</button>
-          <button className="category-button" onClick={() => this.changePillar("mental")}>Mental</button>
-          <button className="category-button" onClick={() => this.changePillar("spiritual")}>Spiritual</button>
-          <button className="category-button" onClick={() => this.changePillar("social")}>Social</button>
+          <button className={pillar === "physical" ? "category-button active-button" : "category-button"} onClick={() => this.changePillar("physical")}>Physical</button>
+          <button className={pillar === "mental" ? "category-button active-button" : "category-button"} onClick={() => this.changePillar("mental")}>Mental</button>
+          <button className={pillar === "spiritual" ? "category-button active-button" : "category-button"} onClick={() => this.changePillar("spiritual")}>Spiritual</button>
+          <button className={pillar === "social" ? "category-button active-button" : "category-button"} onClick={() => this.changePillar("social")}>Social</button>
         </div>
         <Options pillar={this.state.pillar} />
       </Fragment>

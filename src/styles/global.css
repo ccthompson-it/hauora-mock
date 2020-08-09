@@ -12,6 +12,10 @@
   font-family: 'Caveat', cursive;
 }
 
+button {
+  cursor: pointer;
+}
+
 #___gatsby {
   background-color: var(--primary);
   color: var(--text-color);
@@ -97,10 +101,47 @@
 
 .category-box {
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  justify-content: space-around
+}
+
+.category-button {
+  background-color: var(--primary);
+  border: none;
+  width: 40%;
+  margin-bottom: 5%;
+  font-size: 1.5rem;
+}
+
+.category-button:hover {
+  background-color:  var(--tertiary);
+  color: var(--secondary);
+  transition: ease-in-out 100ms;
+}
+
+.category-button:focus {
+  outline: none;
+}
+
+.active-button {
+  background-color: var(--tertiary);
+  color: var(--secondary)
 }
 
 .input-box {
   text-align: center;
+  margin-bottom: 5%;
+}
+
+input {
+  font-size: 1.5rem;
+}
+
+.submit-button {
+  font-size: 1.5rem;
+  padding: 0 .5rem;
 }
 
 .options-box {
@@ -122,6 +163,7 @@
 }
 
 .draggable:hover {
+  transition: ease-in-out 100ms;
   background-color: var(--primary);
 }
 
@@ -153,15 +195,17 @@
 }
 
 .time-block-name {
+  font-size: 1.25rem;
   border-bottom: .25vh solid var(--tertiary);
   /* margin-bottom: -.25vh; */
 }
 
 .droppable-box {
-  height: 40%;
+  height: 35%;
 }
 
 .scheduled-text {
+  font-size: 1.15rem;
   display: inline-block;
   border-bottom: .25vh solid var(--primary);
 }
