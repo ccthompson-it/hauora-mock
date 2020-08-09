@@ -33,7 +33,7 @@ button {
 
 /** Nav Bar **/ 
 
-.nav-bar {
+.header {
   width: 100vw;
   height: 10vh;
   display: flex;
@@ -45,21 +45,40 @@ button {
 }
 
 #main-title {
-  width: 23vw;
+  display: inline-block;
   margin-left: 7vw;
+  margin-right: 5vw;
   font-size: 3rem;
 }
 
-.nav-links {
-  width: 35vw;
+.nav-bar {
   display: flex;
   flex-flow: wrap;
   justify-content: space-between;
+  border-radius: 1vw;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-button {
+  font-size: 1.5rem;
+  padding: .5vw 1vw;
+  background-color: var(--tertiary);
+  color: var(--secondary);
+  border: none;
+}
+
+.nav-button:hover {
+  background-color: var(--text-color);
 }
 
 .active-link {
-  font-weight: bold;
+  background-color: var(--text-color);
 }
+
+
 
 
 /** Planning Page **/
@@ -121,7 +140,7 @@ button {
   transition: ease-in-out 100ms;
 }
 
-.category-button:focus {
+button:focus {
   outline: none;
 }
 
