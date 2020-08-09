@@ -42,7 +42,7 @@ class Options extends Component {
       <Fragment>
         <div className="input-box">
           <input type="text" placeholder="Add Your Own..." value={activity} onChange={this.handleChange} />
-          <button onClick={this.handleSubmit}>+</button>
+          <button onClick={this.handleSubmit} className="submit-button">Add</button>
         </div>
         <div className="options-box">
           {currentOptions.map((option, i) => { return <DragBox text={option} key={i} /> })}
