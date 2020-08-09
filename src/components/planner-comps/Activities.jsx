@@ -21,10 +21,10 @@ class Activities extends Component {
     return (
       <Fragment>
         <div className="category-box">
-          <button onClick={() => this.changePillar("physical")}>Physical</button>
-          <button onClick={() => this.changePillar("mental")}>Mental</button>
-          <button onClick={() => this.changePillar("spiritual")}>Spiritual</button>
-          <button onClick={() => this.changePillar("social")}>Social</button>
+          <button className="category-button" onClick={() => this.changePillar("physical")}>Physical</button>
+          <button className="category-button" onClick={() => this.changePillar("mental")}>Mental</button>
+          <button className="category-button" onClick={() => this.changePillar("spiritual")}>Spiritual</button>
+          <button className="category-button" onClick={() => this.changePillar("social")}>Social</button>
         </div>
         <Options pillar={this.state.pillar} />
       </Fragment>

@@ -2,6 +2,7 @@ import React from "react"
 import Day from './Day'
 
 const dayOrder = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+/* Will be changed to be dynamic */
 
 function makeDays() {
   let days = []
