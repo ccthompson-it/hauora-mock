@@ -6,7 +6,7 @@ function Day(props) {
   return (
     <Fragment>
       <div className="day-box">
-        <h2>{day}</h2>
+        <h2 className="day-text">{day}</h2>
         <TimeBlock type="Morning" />
         <TimeBlock type="Midday" />
         <TimeBlock type="Afternoon" />

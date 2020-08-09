@@ -26,8 +26,8 @@ class TimeBlock extends Component {
     const { type } = this.props
     const { blockOne, blockTwo } = this.state
     return (
-      <div>
-        <p>{type}</p>
+      <div className="time-block">
+        <p className="time-block-name">{type}</p>
         <DropBox boxId={"blockOne"} boxText={blockOne} changeText={this.changeText} removeText={this.removeText}/>
         <DropBox boxId={"blockTwo"} boxText={blockTwo} changeText={this.changeText} removeText={this.removeText}/>
       </div>
