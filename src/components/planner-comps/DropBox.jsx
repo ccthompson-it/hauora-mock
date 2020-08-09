@@ -28,7 +28,7 @@ function DropBox(props) {
 
   return (
     <div className="droppable-box" ref={drop}>
-      {(boxText !== null) && <p onClick={() => removeText(boxId)}>{boxText}</p>}
+      {(boxText !== null) && <p className="scheduled-text">{boxText} <span style={{color: "red", cursor: "pointer"}}onClick={() => removeText(boxId)}>X</span></p>}
     </div>
   )
 }
