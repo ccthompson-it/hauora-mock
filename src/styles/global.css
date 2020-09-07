@@ -117,7 +117,6 @@ a {
 
 .schedule-box {
   width: 60vw;
-  min-width: 800px;
 }
 
 
@@ -194,17 +193,19 @@ input {
   font-size: 1.75rem;
 }
 
-#watermark {
+#options-watermark {
   height: 0;
+  width: max-content;
   color: var(--text-color);
   font-size: 2rem;
   transform: rotate(-90deg);
   position: relative;
-  top: 55%;
-  left: 48%;
+  top: 65%;
+  left: 69%;
   z-index: 0;
   opacity: 0.5;
 }
+
 
 /* Schedule */
 
@@ -225,7 +226,8 @@ input {
 .day-text {
   font-size: 2rem;
   border-bottom: .5vh solid var(--tertiary);
-  margin-bottom: calc(12% - .5vh);
+  padding-bottom: .5vh;
+  margin-bottom: calc(12% - 1vh);
   /* margin-bottom: 10%; */
   height: 8%;
 }
@@ -250,5 +252,15 @@ input {
   border-bottom: .25vh solid var(--primary);
 }
 
-
-
+#schedule-watermark {
+  height: 0;
+  width: max-content;
+  color: var(--text-color);
+  font-size: 2rem;
+  transform: rotate(90deg);
+  position: relative;
+  top: 57%;
+  left: -7%;
+  z-index: 0;
+  opacity: 0.5;
+}

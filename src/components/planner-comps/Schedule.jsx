@@ -14,9 +14,12 @@ function makeDays() {
 
 function Schedule() {
   return (
-    <div className = "week-box">
-      {makeDays()}
-    </div>
+    <React.Fragment>
+      <p id="schedule-watermark">...Drop Here</p>
+      <div className="week-box">
+        {makeDays()}
+      </div>
+    </React.Fragment>
   )
 }
 
