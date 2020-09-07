@@ -3,12 +3,10 @@ import { Link } from 'gatsby'
 
 function Homepage() {
   return (
-    <React.Fragment>
-      <div className="center">
-        <h1 className="placeholder-header">There was an Error!</h1>
-        <Link to="/"><button className="nav-button">Return Home</button></Link>
-      </div>
-    </React.Fragment>
+    <div className="center">
+      <h1 className="placeholder-header">There was an Error!</h1>
+      <Link to="/"><button className="nav-button">Return Home</button></Link>
+    </div>
   )
 }
 
