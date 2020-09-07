@@ -6,7 +6,7 @@ function Dashboard() {
     <Fragment>
       <Header />
       <div className="center">
-        <h1>This is the Dashboard!</h1>
+        <h1 className="placeholder-header">This is the Dashboard!</h1>
       </div>
     </Fragment>
   )
