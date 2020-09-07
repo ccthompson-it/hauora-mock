@@ -6,7 +6,7 @@ function Stats() {
     <Fragment>
       <Header />
       <div className="center">
-        <h1>This is the Stats!</h1>
+        <h1 className="placeholder-header">This is the Stats!</h1>
       </div>
     </Fragment>
   )

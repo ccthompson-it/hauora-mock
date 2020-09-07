@@ -7,7 +7,7 @@ function Profile() {
     <Fragment>
       <Header />
       <div className="center">
-        <h1>This is the Profile!</h1>
+        <h1 className="placeholder-header">This is the Profile!</h1>
       </div>
     </Fragment>
   )
