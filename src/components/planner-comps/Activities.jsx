@@ -21,7 +21,7 @@ class Activities extends Component {
     const { pillar } = this.state
     return (
       <Fragment>
-        <p id="watermark">Drag From Here...</p>
+        <p id="options-watermark">Drag From Here...</p>
         <div className="category-box">
           <button className={pillar === "physical" ? "category-button active-button" : "category-button"} onClick={() => this.changePillar("physical")}>Physical</button>
           <button className={pillar === "mental" ? "category-button active-button" : "category-button"} onClick={() => this.changePillar("mental")}>Mental</button>
